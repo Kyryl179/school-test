@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <title>Geometry</title>
+    <meta>
+    <style>
+        .image{
+            
+        }
+        body{
+            background-color: rgba(251, 255, 0, 0.801);
+        }
+        .question{
+            margin-left: 200px;
+        }
+        .answer-button{
+            background-color: white;
+            border-color: rgb(255, 255, 255);
+            margin-top: 5px;
+            border-radius: 90%;
+            height: 25px;
+            width: 25px;
+        }
+
+    </style>
+</head>
+
+<body backgroun>
+    <script>
+        function Check_boxes(){
+            const Q1 = document.getElementById('a4');
+            if(Q1.checked == true){
+                window.alert("Yes");
+            }
+            else{
+                window.alert("No");
+            }
+        }
+
+        function Check_a67(){
+            var A6 = document.getElementById('a6').value;
+            var A7 = document.getElementById('a7').value;
+            if((A6 == 5) && (A7 == 11)){
+                window.alert("Yes");
+            }
+            else{
+                window.alert("No");
+            }
+        }
+
+
+        
+    </script>
+    <div class="image">
+        <img src="VECTOR .png" width="250px" height="250px">
+        
+    </div>
+    <p>How many triangles are in the picture?</p>
+    <div class="answers">
+        <div style="display:flex; flex-direction: row; justify-content: left;">
+            <input class='answer-button' type="checkbox" id="a1">
+            <p>3</p>
+          
+        </div>
+        <div style="display:flex; flex-direction: row; justify-content: left;">
+            <input class='answer-button' type="checkbox" id="a2">
+            <p>4</p>
+        </div>
+        <div style="display:flex; flex-direction: row; justify-content: left;">
+            <input class='answer-button' type="checkbox" id="a3">
+            <p>5</p>
+        </div>
+        <div style="display:flex; flex-direction: row; justify-content: left;">
+            <input class='answer-button' type="checkbox" id="a4">
+            <p>6</p>
+        </div>
+        <div style="display:flex; flex-direction: row; justify-content: left;">
+            <input class='answer-button' type="checkbox" id="a5">
+            <p>7</p>
+        </div>
+        <div>
+            <button onclick = 'Check_boxes();'>Answer</button>
+        </div>
+
+        <p>|x+3| = 8</p>
+        <div class="answers">
+            <div style="display:flex; flex-direction: row; justify-content: left;">
+                <p>x = </p>
+                <input type="text" id="a6" name="name" required minlength="4" maxlength="8" size="10"></div>
+            <div style="display:flex; flex-direction: row; justify-content: left;">
+                    <p>x = -(</p>
+                    <input type="text" id="a7" name="name" required minlength="4" maxlength="8" size="10">
+                    <p>) </p>
+                </div>
+                    
+            <div>
+                <button onclick = 'Check_a67();'>Answer</button>
+            </div>
+    </div>
+</body>
